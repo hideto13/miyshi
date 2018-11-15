@@ -4,15 +4,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <title>Miyushi</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"><!--opensans-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container header-container">
         <div class="info">
-          <a class="logo"><img src="" width="" height="" alt=""></a>
+          <a class="logo" href="#"><img src="img/logo.svg" width="190" height="69" alt="logo"></a>
           <ul class="info-list">
             <li class="adress">
               <p>г.Курск, ул.Ленина,д.3</p>
@@ -31,15 +31,15 @@
         </div>
         <nav class="header-navigation">
           <ul class="site-navigation">
-            <li class="site-navigation-item"><a class="site-navigation-link">Меню</a></li>
-            <li class="site-navigation-item"><a class="site-navigation-link">Акции и скидки</a></li>
-            <li class="site-navigation-item"><a class="site-navigation-link">Доставка и оплата</a></li>
-            <li class="site-navigation-item"><a class="site-navigation-link">Новости</a></li>
-            <li class="site-navigation-item"><a class="site-navigation-link">Контакты</a></li>
+            <li class="site-navigation-item"><a class="site-navigation-link" href="#">Меню</a></li>
+            <li class="site-navigation-item"><a class="site-navigation-link" href="#">Акции и скидки</a></li>
+            <li class="site-navigation-item"><a class="site-navigation-link" href="#">Доставка и оплата</a></li>
+            <li class="site-navigation-item"><a class="site-navigation-link" href="#">Новости</a></li>
+            <li class="site-navigation-item"><a class="site-navigation-link" href="#">Контакты</a></li>
           </ul>
           <ul class="user-navigation">
-            <li class="user-navigation-item"><a class="user-navigation-link">Кабинет</a></li>
-            <li class="user-navigation-item"><a class="user-navigation-link">Корзина</a></li>
+            <li class="user-navigation-item"><a class="user-navigation-link" href="#">Кабинет</a></li>
+            <li class="user-navigation-item"><a class="user-navigation-link" href="#">Корзина</a></li>
           </ul>
         </nav>
       </div>
@@ -47,122 +47,97 @@
     <main>
       <h1 class="visually-hidden">Магазин "Миюши"</h1>
       <section class="offers">
-        <input type="radio" name="point" id="slide1" checked>
-        <input type="radio" name="point" id="slide2">
-        <input type="radio" name="point" id="slide3">
-        <div class="slider">
-          <div class="slides slide1">
-            <div class="container">
-              <h2></h2>
-              <p>
-                <span></span>
-              </p>
-              <a></a>
-            </div>
-          </div>
-          <div class="slides slide2">
-            <div class="container">
-              <h2></h2>
-              <p>
-                <span></span>
-              </p>
-              <a></a>
-            </div>
-          </div>
-          <div class="slides slide3">
-            <div class="container">
-              <h2></h2>
-              <p>
-                <span></span>
-              </p>
-              <a></a>
-            </div>
-          </div>
-        </div>
+        <h2 class="visually-hidden">Предложения</h2>
         <div class="controls">
-          <label for="slide1"></label>
-          <label for="slide2"></label>
-          <label for="slide3"></label>
-        </div>
-        <div class="">
           <button>Вперед</button>
           <button>Назад</button>
         </div>
+        <div class="container">
+          <h3 class="offer-title">Счастливые часы</h3>
+          <p class="offer-text">С 11:00 до 16:00 в будние дни</p>
+          <p class="">Скидка 15%</p>
+          <a class="offer-button">Подробнее</a>
+          <ul class="slider">
+            <li class="slider-item"><span class="visually-hidden">Слайд 1</span></li>
+            <li class="slider-item"><span class="visually-hidden">Слайд 2</span></li>
+            <li class="slider-item"><span class="visually-hidden">Слайд 3</span></li>
+          </ul>
+        </div>
       </section>
       <section class="assortment">
-        <div class="container">
+       
           <article class="sets">
+              <div class="container">
             <h2 class="title">Сеты</h2>
-            <ul class="sets-list">
-              <li class="sets-item">
-                <img>
-                <h3 class="set-title"></h3>
-                <p class="set-info">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+            <ul class="product-list">
+                <li class="product-item">
+                    <img src="img/set-1.png" width="" height="" alt="">
+                    <h3 class="product-title">Сет №10</h3>
+                    <p class="product-info">
+                      <span>72 шт.</span>
+                      <span>1560 г.</span>
+                      <span>1700 Kkal</span>
+                    </p>
+                    <div class="product-wrapper">
+                      <p class="price">
+                        <span>2050</span>
+                        <span>руб.</span>
+                      </p>
+                      <div class="amount">1</div>
+                    </div>
+                    <button class="button">В корзину</button>
+                  </li>
+              <li class="product-item">
+                <img src="img/set-2.png" width="" height="" alt="">
+                <h3 class="product-title">Сет №8</h3>
+                <p class="product-info">
+                  <span>24 шт.</span>
+                  <span>960 г.</span>
+                  <span>800 Kkal</span>
                 </p>
-                <div class="set-wrapper">
+                <div class="product-wrapper">
                   <p class="price">
-                    <span></span>
-                    <span></span>
+                    <span>1590</span>
+                    <span>руб.</span>
                   </p>
-                  <div class="amount"></div>
+                  <div class="amount">1</div>
                 </div>
-                <button class="button"></button>
+                <button class="button">В корзину</button>
               </li>
-              <li class="sets-item">
-                <img>
-                <h3 class="set-title"></h3>
-                <p class="set-info">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+              <li class="product-item">
+                <img src="img/set-3.png" width="" height="" alt="">
+                <h3 class="product-title">Минисет №5</h3>
+                <p class="product-info">
+                  <span>14 шт.</span>
+                  <span>450 г.</span>
+                  <span>400 Kkal</span>
                 </p>
-                <div class="set-wrapper">
+                <div class="product-wrapper">
                   <p class="price">
-                    <span></span>
-                    <span></span>
+                    <span>510</span>
+                    <span>руб.</span>
                   </p>
-                  <div class="amount"></div>
+                  <div class="amount">1</div>
                 </div>
-                <button class="button"></button>
+                <button class="button">В корзину</button>
               </li>
-              <li class="sets-item">
-                <img>
-                <h3 class="set-title"></h3>
-                <p class="set-info">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+              <li class="product-item">
+                <img src="img/set-4.png" width="" height="" alt="">
+                <h3 class="product-title">Сет №6</h3>
+                <p class="product-info">
+                  <span>16 шт.</span>
+                  <span>460 г.</span>
+                  <span>490 Kkal</span>
                 </p>
-                <div class="set-wrapper">
+                <div class="product-wrapper">
                   <p class="price">
-                    <span></span>
-                    <span></span>
+                    <span>400</span>
+                    <span>руб.</span>
                   </p>
-                  <div class="amount"></div>
+                  <div class="amount">1</div>
                 </div>
-                <button class="button"></button>
+                <button class="button">В корзину</button>
               </li>
-              <li class="sets-item">
-                <img>
-                <h3 class="set-title"></h3>
-                <p class="set-info">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </p>
-                <div class="set-wrapper">
-                  <p class="price">
-                    <span></span>
-                    <span></span>
-                  </p>
-                  <div class="amount"></div>
-                </div>
-                <button class="button"></button>
-              </li>
-            </ul>
             <ul class="pagination-list">
               <li><a class="pagination-button back" href="#"><span class="visually-hidden">Назад</span></a></li>
               <li class="pagination-item pagination-item-current"><a><span class="visually-hidden">1</span></a></li>
@@ -171,283 +146,38 @@
               <li class="pagination-item"><a href="#"><span class="visually-hidden">4</span></a></li>
               <li class="pagination-item"><a href="#"><span class="visually-hidden">5</span></a></li>
               <li><a class="pagination-button next" href="#"><span class="visually-hidden">Вперед</span></a></li>
-            </ul>
+            </ul></div>
           </article>
           <article class="rolls">
+              <div class="container">
             <h2 class="title">Роллы</h2>
-            <ul class="rolls-list">
-              <li class="rolls-item">
-                <img>
-                <h3 class="roll-title"></h3>
-                <p class="roll-info">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </p>
-                <div class="roll-wrapper">
-                  <p class="price">
-                    <span></span>
-                    <span></span>
-                  </p>
-                  <div class="amount"></div>
-                </div>
-                <button class="button"></button>
-              </li>
-              <li class="rolls-item">
-                <img>
-                <h3 class="roll-title"></h3>
-                <p class="roll-info">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </p>
-                <div class="roll-wrapper">
-                  <p class="price">
-                    <span></span>
-                    <span></span>
-                  </p>
-                  <div class="amount"></div>
-                </div>
-                <button class="button"></button>
-              </li>
-              <li class="rolls-item">
-                <img>
-                <h3 class="roll-title"></h3>
-                <p class="roll-info">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </p>
-                <div class="roll-wrapper">
-                  <p class="price">
-                    <span></span>
-                    <span></span>
-                  </p>
-                  <div class="amount"></div>
-                </div>
-                <button class="button"></button>
-              </li>
-              <li class="rolls-item">
-                <img>
-                <h3 class="roll-title"></h3>
-                <p class="roll-info">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </p>
-                <div class="roll-wrapper">
-                  <p class="price">
-                    <span></span>
-                    <span></span>
-                  </p>
-                  <div class="amount"></div>
-                </div>
-                <button class="button"></button>
-              </li>
-            </ul>
-            <ul class="pagination-list">
-              <li><a class="pagination-button back" href="#"><span class="visually-hidden">Назад</span></a></li>
-              <li class="pagination-item pagination-item-current"><a><span class="visually-hidden">1</span></a></li>
-              <li class="pagination-item"><a href="#"><span class="visually-hidden">2</span></a></li>
-              <li class="pagination-item"><a href="#"><span class="visually-hidden">3</span></a></li>
-              <li class="pagination-item"><a href="#"><span class="visually-hidden">4</span></a></li>
-              <li class="pagination-item"><a href="#"><span class="visually-hidden">5</span></a></li>
-              <li><a class="pagination-button next" href="#"><span class="visually-hidden">Вперед</span></a></li>
-            </ul>
-          </article>
-          <article class="pizza">
-            <h2 class="title">Пицца</h2>
-            <ul class="pizza-list">
-              <li class="pizza-item">
-                <img>
-                <h3 class="pizza-title"></h3>
-                <p class="pizza-info">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </p>
-                <div class="pizza-wrapper">
-                  <p class="price">
-                    <span></span>
-                    <span></span>
-                  </p>
-                  <div class="amount"></div>
-                </div>
-                <button class="button"></button>
-              </li>
-              <li class="pizza-item">
-                <img>
-                <h3 class="pizza-title"></h3>
-                <p class="pizza-info">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </p>
-                <div class="pizza-wrapper">
-                  <p class="price">
-                    <span></span>
-                    <span></span>
-                  </p>
-                  <div class="amount"></div>
-                </div>
-                <button class="button"></button>
-              </li>
-              <li class="pizza-item">
-                <img>
-                <h3 class="pizza-title"></h3>
-                <p class="pizza-info">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </p>
-                <div class="pizza-wrapper">
-                  <p class="price">
-                    <span></span>
-                    <span></span>
-                  </p>
-                  <div class="amount"></div>
-                </div>
-                <button class="button"></button>
-              </li>
-              <li class="pizza-item">
-                <img>
-                <h3 class="pizza-title"></h3>
-                <p class="pizza-info">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </p>
-                <div class="pizza-wrapper">
-                  <p class="price">
-                    <span></span>
-                    <span></span>
-                  </p>
-                  <div class="amount"></div>
-                </div>
-                <button class="button"></button>
-              </li>
-            </ul>
-            <ul class="pagination-list">
-              <li><a class="pagination-button back" href="#"><span class="visually-hidden">Назад</span></a></li>
-              <li class="pagination-item pagination-item-current"><a><span class="visually-hidden">1</span></a></li>
-              <li class="pagination-item"><a href="#"><span class="visually-hidden">2</span></a></li>
-              <li class="pagination-item"><a href="#"><span class="visually-hidden">3</span></a></li>
-              <li class="pagination-item"><a href="#"><span class="visually-hidden">4</span></a></li>
-              <li class="pagination-item"><a href="#"><span class="visually-hidden">5</span></a></li>
-              <li><a class="pagination-button next" href="#"><span class="visually-hidden">Вперед</span></a></li>
-            </ul>
-          </article>
-          <article>
-            <h2 class="title">Wok</h2>
-            <ul class="wok-list">
-              <li class="wok-item">
-                  <img>
-                  <h3 class="wok-title"></h3>
-                  <p class="wok-info">
-                    <span></span>
-                    <span></span>
-                  </p>
-                  <div class="wok-sause">
-                    <div class="sause-add"></div>
-                    <div class="sause-price"></div>
-                    <select class="sause"></select>
-                  </div>
-                  <div class="wok-wrapper">
-                    <p class="price">
-                      <span></span>
-                      <span></span>
+            <ul class="product-list">
+                <li class="product-item">
+                    <img src="img/roll-1.png" width="" height="" alt="">
+                    <h3 class="product-title">Кунсей батакон</h3>
+                    <p class="product-info">
+                      <span>8 шт.</span>
+                      <span>250 г.</span>
+                      <span>350 Kkal</span>
                     </p>
-                    <div class="amount"></div>
-                  </div>
-                  <button class="button"></button>
-              </li>
-              <li class="wok-item">
-                <img>
-                <h3 class="wok-title"></h3>
-                <p class="wok-info">
-                  <span></span>
-                  <span></span>
-                </p>
-                <div class="wok-sause">
-                  <div class="sause-add"></div>
-                  <div class="sause-price"></div>
-                  <select class="sause"></select>
-                </div>
-                <div class="wok-wrapper">
-                  <p class="price">
-                    <span></span>
-                    <span></span>
-                  </p>
-                  <div class="amount"></div>
-                </div>
-                <button class="button"></button>
-              </li>
-              <li class="wok-item">
-                <img>
-                <h3 class="wok-title"></h3>
-                <p class="wok-info">
-                  <span></span>
-                  <span></span>
-                </p>
-                <div class="wok-sause">
-                  <div class="sause-add"></div>
-                  <div class="sause-price"></div>
-                  <select class="sause"></select>
-                </div>
-                <div class="wok-wrapper">
-                  <p class="price">
-                    <span></span>
-                    <span></span>
-                  </p>
-                  <div class="amount"></div>
-                </div>
-                <button class="button"></button>
-              </li>
-              <li class="wok-item">
-                <img>
-                <h3 class="wok-title"></h3>
-                <p class="wok-info">
-                  <span></span>
-                  <span></span>
-                </p>
-                <div class="wok-sause">
-                  <div class="sause-add"></div>
-                  <div class="sause-price"></div>
-                  <select class="sause"></select>
-                </div>
-                <div class="wok-wrapper">
-                  <p class="price">
-                    <span></span>
-                    <span></span>
-                  </p>
-                  <div class="amount"></div>
-                </div>
-                <button class="button"></button>
-              </li>
-            </ul>
-            <ul class="pagination-list">
-              <li><a class="pagination-button back" href="#"><span class="visually-hidden">Назад</span></a></li>
-              <li class="pagination-item pagination-item-current"><a><span class="visually-hidden">1</span></a></li>
-              <li class="pagination-item"><a href="#"><span class="visually-hidden">2</span></a></li>
-              <li class="pagination-item"><a href="#"><span class="visually-hidden">3</span></a></li>
-              <li class="pagination-item"><a href="#"><span class="visually-hidden">4</span></a></li>
-              <li class="pagination-item"><a href="#"><span class="visually-hidden">5</span></a></li>
-              <li><a class="pagination-button next" href="#"><span class="visually-hidden">Вперед</span></a></li>
-            </ul>
-          </article>
-          <article class="new-product">
-            <h2><a href="#">Новинки</a></h2>
-            <h2><a href="#">Акции</a></h2>
-            <ul class="new-product-list">
-              <li class="new-product-item">
-                <img src="" width="" height="" alt="">
-                <h3 class="new-product-title">Унаги диру</h3>
-                <p class="new-product-info">
+                    <div class="product-wrapper">
+                      <p class="price">
+                        <span>260</span>
+                        <span>руб.</span>
+                      </p>
+                      <div class="amount">1</div>
+                    </div>
+                    <button class="button">В корзину</button>
+                  </li>
+              <li class="product-item">
+                <img src="img/roll-2.png" width="" height="" alt="">
+                <h3 class="product-title">Унаги диру</h3>
+                <p class="product-info">
                   <span>8 шт.</span>
                   <span>960 г.</span>
                   <span>800 Kkal</span>
                 </p>
-                <div class="new-product-wrapper">
+                <div class="product-wrapper">
                   <p class="price">
                     <span>280</span>
                     <span>руб.</span>
@@ -456,54 +186,37 @@
                 </div>
                 <button class="button">В корзину</button>
               </li>
-              <li class="new-product-item">
-                <img src="" width="" height="" alt="">
-                <h3 class="new-product-title"></h3>
-                <p class="new-product-info">
+              <li class="product-item">
+                <img src="img/roll-3.png" width="" height="" alt="">
+                <h3 class="product-title">Филадельфия</h3>
+                <p class="product-info">
                   <span>8 шт.</span>
-                  <span>960 г.</span>
-                  <span>800 Kkal</span>
+                  <span>450 г.</span>
+                  <span>400 Kkal</span>
                 </p>
-                <div class="new-product-wrapper">
+                <div class="product-wrapper">
                   <p class="price">
                     <span>280</span>
                     <span>руб.</span>
                   </p>
-                  <div class="amount"></div>
+                  <div class="amount">1</div>
                 </div>
                 <button class="button">В корзину</button>
               </li>
-              <li class="new-product-item">
-                <img src="" width="" height="" alt="">
-                <h3 class="new-product-title"></h3>
-                <p class="new-product-info">
+              <li class="product-item">
+                <img src="img/roll-4.png" width="" height="" alt="">
+                <h3 class="product-title">Мексиканский</h3>
+                <p class="product-info">
                   <span>8 шт.</span>
-                  <span>960 г.</span>
-                  <span>800 Kkal</span>
+                  <span>460 г.</span>
+                  <span>490 Kkal</span>
                 </p>
-                <div class="new-product-wrapper">
+                <div class="product-wrapper">
                   <p class="price">
-                    <span>280</span>
+                    <span>290</span>
                     <span>руб.</span>
                   </p>
-                  <div class="amount"></div>
-                </div>
-                <button class="button">В корзину</button>
-              </li>
-              <li class="new-product-item">
-                <img src="" width="" height="" alt="">
-                <h3 class="new-product-title"></h3>
-                <p class="new-product-info">
-                  <span>8 шт.</span>
-                  <span>960 г.</span>
-                  <span>800 Kkal</span>
-                </p>
-                <div class="new-product-wrapper">
-                  <p class="price">
-                    <span>280</span>
-                    <span>руб.</span>
-                  </p>
-                  <div class="amount"></div>
+                  <div class="amount">1</div>
                 </div>
                 <button class="button">В корзину</button>
               </li>
@@ -516,9 +229,274 @@
               <li class="pagination-item"><a href="#"><span class="visually-hidden">4</span></a></li>
               <li class="pagination-item"><a href="#"><span class="visually-hidden">5</span></a></li>
               <li><a class="pagination-button next" href="#"><span class="visually-hidden">Вперед</span></a></li>
-            </ul>
+            </ul></div>
           </article>
-        </div>
+          <article class="pizza">
+              <div class="container">
+            <h2 class="title">Пицца</h2>
+            <ul class="product-list">
+              <li class="product-item">
+                <img src="img/pizza-1.png" width="" height="" alt="">
+                <h3 class="product-title">Баварская</h3>
+                <p class="product-info">
+                  <span>33 см</span>
+                  <span>680 г.</span>
+                  <span>1350 Kkal</span>
+                </p>
+                <div class="product-wrapper">
+                  <p class="price">
+                    <span>480</span>
+                    <span>руб.</span>
+                  </p>
+                  <div class="amount">1</div>
+                </div>
+                <button class="button">В корзину</button>
+              </li>
+              <li class="product-item">
+                  <img src="img/pizza-2.png" width="" height="" alt="">
+                  <h3 class="product-title">Вегетарианская</h3>
+                  <p class="product-info">
+                    <span>33 см</span>
+                    <span>755 г.</span>
+                    <span>1800 Kkal</span>
+                  </p>
+                  <div class="product-wrapper">
+                    <p class="price">
+                      <span>380</span>
+                      <span>руб.</span>
+                    </p>
+                    <div class="amount">1</div>
+                  </div>
+                  <button class="button">В корзину</button>
+                </li>
+                <li class="product-item">
+                    <img src="img/pizza-3.png" width="" height="" alt="">
+                    <h3 class="product-title">Пепперони</h3>
+                    <p class="product-info">
+                      <span>33 см</span>
+                      <span>615 г.</span>
+                      <span>1400 Kkal</span>
+                    </p>
+                    <div class="product-wrapper">
+                      <p class="price">
+                        <span>450</span>
+                        <span>руб.</span>
+                      </p>
+                      <div class="amount">1</div>
+                    </div>
+                    <button class="button">В корзину</button>
+                  </li>
+                  <li class="product-item">
+                      <img src="img/pizza-4.png" width="" height="" alt="">
+                      <h3 class="product-title">Классическая</h3>
+                      <p class="product-info">
+                        <span>33 см</span>
+                        <span>590 г.</span>
+                        <span>1490 Kkal</span>
+                      </p>
+                      <div class="product-wrapper">
+                        <p class="price">
+                          <span>390</span>
+                          <span>руб.</span>
+                        </p>
+                        <div class="amount">1</div>
+                      </div>
+                      <button class="button">В корзину</button>
+                    </li>
+            </ul>
+            <ul class="pagination-list">
+              <li><a class="pagination-button back" href="#"><span class="visually-hidden">Назад</span></a></li>
+              <li class="pagination-item pagination-item-current"><a><span class="visually-hidden">1</span></a></li>
+              <li class="pagination-item"><a href="#"><span class="visually-hidden">2</span></a></li>
+              <li class="pagination-item"><a href="#"><span class="visually-hidden">3</span></a></li>
+              <li class="pagination-item"><a href="#"><span class="visually-hidden">4</span></a></li>
+              <li class="pagination-item"><a href="#"><span class="visually-hidden">5</span></a></li>
+              <li><a class="pagination-button next" href="#"><span class="visually-hidden">Вперед</span></a></li>
+            </ul></div>
+          </article>
+          <div class="container">
+          <article class="wok">
+            <h2 class="title">Wok</h2>
+            <ul class="product-list">
+              <li class="product-item">
+                  <img src="img/wok-1.png" width="" height="" alt="">
+                  <h3 class="product-title">С говядиной</h3>
+                  <p class="product-info">
+                    <span>400 г.</span>
+                    <span>1350 Kkal</span>
+                  </p>
+                  <div class="product-sause">
+                    <div class="sause-add">Добавить:</div>
+                    <div class="sause-price">140 руб.</div>
+                    <select class="sause">Китайский соус</select>
+                  </div>
+                  <div class="product-wrapper">
+                    <p class="price">
+                      <span>430</span>
+                      <span>руб.</span>
+                    </p>
+                    <div class="amount">1</div>
+                  </div>
+                  <button class="button">В корзину</button>
+              </li>
+              <li class="product-item">
+                  <img src="img/wok-2.png" width="" height="" alt="">
+                  <h3 class="product-title">С курицей</h3>
+                  <p class="product-info">
+                    <span>400 г.</span>
+                    <span>1350 Kkal</span>
+                  </p>
+                  <div class="product-sause">
+                    <div class="sause-add">Добавить:</div>
+                    <div class="sause-price">0 руб.</div>
+                    <select class="sause">Китайский соус</select>
+                  </div>
+                  <div class="product-wrapper">
+                    <p class="price">
+                      <span>290</span>
+                      <span>руб.</span>
+                    </p>
+                    <div class="amount">1</div>
+                  </div>
+                  <button class="button">В корзину</button>
+              </li>
+              <li class="product-item">
+                  <img src="img/wok-3.png" width="" height="" alt="">
+                  <h3 class="product-title">С морепродуктами</h3>
+                  <p class="product-info">
+                    <span>400 г.</span>
+                    <span>1350 Kkal</span>
+                  </p>
+                  <div class="product-sause">
+                    <div class="sause-add">Добавить:</div>
+                    <div class="sause-price">140 руб.</div>
+                    <select class="sause">Китайский соус</select>
+                  </div>
+                  <div class="product-wrapper">
+                    <p class="price">
+                      <span>430</span>
+                      <span>руб.</span>
+                    </p>
+                    <div class="amount">1</div>
+                  </div>
+                  <button class="button">В корзину</button>
+              </li>
+              <li class="product-item">
+                  <img src="img/wok-4.png" width="" height="" alt="">
+                  <h3 class="product-title">С овощами</h3>
+                  <p class="product-info">
+                    <span>400 г.</span>
+                    <span>1350 Kkal</span>
+                  </p>
+                  <div class="product-sause">
+                    <div class="sause-add">Добавить:</div>
+                    <div class="sause-price">140 руб.</div>
+                    <select class="sause">Китайский соус</select>
+                  </div>
+                  <div class="product-wrapper">
+                    <p class="price">
+                      <span>430</span>
+                      <span>руб.</span>
+                    </p>
+                    <div class="amount">1</div>
+                  </div>
+                  <button class="button">В корзину</button>
+              </li>
+            </ul>
+            <ul class="pagination-list">
+              <li><a class="pagination-button back" href="#"><span class="visually-hidden">Назад</span></a></li>
+              <li class="pagination-item pagination-item-current"><a><span class="visually-hidden">1</span></a></li>
+              <li class="pagination-item"><a href="#"><span class="visually-hidden">2</span></a></li>
+              <li class="pagination-item"><a href="#"><span class="visually-hidden">3</span></a></li>
+              <li class="pagination-item"><a href="#"><span class="visually-hidden">4</span></a></li>
+              <li class="pagination-item"><a href="#"><span class="visually-hidden">5</span></a></li>
+              <li><a class="pagination-button next" href="#"><span class="visually-hidden">Вперед</span></a></li>
+            </ul></div>
+          </article>
+          <article class="new-product">
+              <div class="container">
+            <h2><a href="#">Новинки</a></h2>
+            <h2><a href="#">Акции</a></h2>
+            <ul class="product-list">
+                <li class="product-item">
+                    <img src="img/roll-1.png" width="" height="" alt="">
+                    <h3 class="product-title">Кунсей батакон</h3>
+                    <p class="product-info">
+                      <span>8 шт.</span>
+                      <span>250 г.</span>
+                      <span>350 Kkal</span>
+                    </p>
+                    <div class="product-wrapper">
+                      <p class="price">
+                        <span>260</span>
+                        <span>руб.</span>
+                      </p>
+                      <div class="amount">1</div>
+                    </div>
+                    <button class="button">В корзину</button>
+                  </li>
+              <li class="product-item">
+                <img src="img/roll-2.png" width="" height="" alt="">
+                <h3 class="product-title">Унаги диру</h3>
+                <p class="product-info">
+                  <span>8 шт.</span>
+                  <span>960 г.</span>
+                  <span>800 Kkal</span>
+                </p>
+                <div class="product-wrapper">
+                  <p class="price">
+                    <span>280</span>
+                    <span>руб.</span>
+                  </p>
+                  <div class="amount">1</div>
+                </div>
+                <button class="button">В корзину</button>
+              </li>
+              <li class="product-item">
+                <img src="img/roll-3.png" width="" height="" alt="">
+                <h3 class="product-title">Филадельфия</h3>
+                <p class="product-info">
+                  <span>8 шт.</span>
+                  <span>450 г.</span>
+                  <span>400 Kkal</span>
+                </p>
+                <div class="product-wrapper">
+                  <p class="price">
+                    <span>280</span>
+                    <span>руб.</span>
+                  </p>
+                  <div class="amount">1</div>
+                </div>
+                <button class="button">В корзину</button>
+              </li>
+              <li class="product-item">
+                <img src="img/roll-4.png" width="" height="" alt="">
+                <h3 class="product-title">Мексиканский</h3>
+                <p class="product-info">
+                  <span>8 шт.</span>
+                  <span>460 г.</span>
+                  <span>490 Kkal</span>
+                </p>
+                <div class="product-wrapper">
+                  <p class="price">
+                    <span>290</span>
+                    <span>руб.</span>
+                  </p>
+                  <div class="amount">1</div>
+                </div>
+                <button class="button">В корзину</button>
+              </li>
+            </ul>
+            <ul class="pagination-list">
+              <li><a class="pagination-button back" href="#"><span class="visually-hidden">Назад</span></a></li>
+              <li class="pagination-item pagination-item-current"><a><span class="visually-hidden">1</span></a></li>
+              <li class="pagination-item"><a href="#"><span class="visually-hidden">2</span></a></li>
+              <li class="pagination-item"><a href="#"><span class="visually-hidden">3</span></a></li>
+              <li class="pagination-item"><a href="#"><span class="visually-hidden">4</span></a></li>
+              <li class="pagination-item"><a href="#"><span class="visually-hidden">5</span></a></li>
+              <li><a class="pagination-button next" href="#"><span class="visually-hidden">Вперед</span></a></li>
+            </ul></div>
+          </article>
       </section>
       <section class="features">
         <div class="container">
@@ -543,14 +521,14 @@
           <ul class="reviews-list">
             <li class="reviews-item">
               <div class="user-vk">
-                <img src="" width="" height="">
+                <img src="img/avatar.png" width="" height="">
                 <p class="user-vk-info">
                   <span class="user-vk-name">Надежда Наширбанова</span>
                   <span class="user-vk-date">5 авг 2017 в 9:58</span>
                 </p>
               </div>
               <p class="review-text">Спасибо за быструю доставку! Отличный поздний ужин после рабочего дня)</p>
-              <img src="" width="" height="" alt="">
+              <img src="img/foto.jpg" width="" height="" alt="">
               <div class="vk-tools">
                 <button class="vk-like"><span class="visually-hidden">Лайк</span></button>
                 <a class="vk-comment" href="#"><span class="visually-hidden">Коммент</span>2</a>
@@ -560,14 +538,14 @@
             </li>
             <li class="reviews-item">
                 <div class="user-vk">
-                  <img src="" width="" height="">
+                  <img src="img/avatar.png" width="" height="">
                   <p class="user-vk-info">
                     <span class="user-vk-name">Надежда Наширбанова</span>
                     <span class="user-vk-date">5 авг 2017 в 9:58</span>
                   </p>
                 </div>
                 <p class="review-text">Спасибо за быструю доставку! Отличный поздний ужин после рабочего дня)</p>
-                <img src="" width="" height="" alt="">
+                <img src="img/foto.jpg" width="" height="" alt="">
                 <div class="vk-tools">
                   <button class="vk-like"><span class="visually-hidden">Лайк</span></button>
                   <a class="vk-comment" href="#"><span class="visually-hidden">Коммент</span>2</a>
@@ -577,14 +555,14 @@
               </li>
               <li class="reviews-item">
                   <div class="user-vk">
-                    <img src="" width="" height="">
+                    <img src="img/avatar.png" width="" height="">
                     <p class="user-vk-info">
                       <span class="user-vk-name">Надежда Наширбанова</span>
                       <span class="user-vk-date">5 авг 2017 в 9:58</span>
                     </p>
                   </div>
                   <p class="review-text">Спасибо за быструю доставку! Отличный поздний ужин после рабочего дня)</p>
-                  <img src="" width="" height="" alt="">
+                  <img src="img/foto.jpg" width="" height="" alt="">
                   <div class="vk-tools">
                     <button class="vk-like"><span class="visually-hidden">Лайк</span></button>
                     <a class="vk-comment" href="#"><span class="visually-hidden">Коммент</span>2</a>
@@ -616,7 +594,7 @@
           <div class="about-wrapper">
             <p class="about-paragraph">
             <b>Заказ и доставка роллов, пиццы и WOK(Вок) в городе Курск</b>
-            Суши МИЮШИ открылись в октябре 2012г. и уже завоевали успех у тех, кто ценит японскую кухню и качественное приготовление блюд.
+            <span>Суши МИЮШИ открылись в октябре 2012г. и уже завоевали успех у тех, кто ценит японскую кухню и качественное приготовление блюд.
 
             С 2013 года мы осуществляем не только доставку на дом, теперь для вас открыт наш уютный небольшой зал. Придя сюда, вы сможете плотно пообедать, насладиться прекрасными напитками, посидеть с друзьями или обзавестись новыми знакомствами.
 
@@ -626,14 +604,14 @@
 
             В меню суши МИЮШИ представлено все многообразие японской кухни. Классические суши, и роллы приготовлены в соответствии с традиционными рецептами. Для любителей нежных и тающих во рту блюд предлагаются роллы с мясом краба, а также для больших любителей копченого угря потрясающий ролл Дракон. Для желающих пробовать что-то новое и необычное – острые ГУНКАНЫ и новинка нашего меню - ИНАРИ, широкий выбор горячих роллов. Большим компаниям будет удобно заказать суши и роллы, объединенные в сеты, включающие сразу несколько видов каждого из этих блюд. Кроме того, меню суши МИЮШИ не ограничено только японской кухней, здесь всегда можно заказать горячие и холодные блюда ЛАПША или РИС WOK с различными мясными и рыбными наполнителями, салаты, горячие закуски и различные напитки.
 
-            Оформив у нас заказ суши на дом, клиент может выбрать удобный ему способ оплаты: наличными при получении заказа или банковской картой VISA, MasterCard при заполнении специальной формы заказа на сайте или на дому через переносной терминал (заранее сообщив оператору о форме оплаты).
+            Оформив у нас заказ суши на дом, клиент может выбрать удобный ему способ оплаты: наличными при получении заказа или банковской картой VISA, MasterCard при заполнении специальной формы заказа на сайте или на дому через переносной терминал (заранее сообщив оператору о форме оплаты).</span>
           </p>
-          <img src="" width="" height="" alt="">
+          <img src="img/about.png" width="" height="" alt="">
           </div>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="main-footer">
       <div class="container">
         <nav class="footer-navigation">
           <ul class="footer-products">
@@ -648,7 +626,7 @@
             <li><a href="#">Дополнительно</a></li>
           </ul>
                 <ul class="footer-sets">
-                    <li><a href="#">Сеты</a></li>
+                    <caption class="nav-caption"><a href="#">Сеты</a></caption>
                     <li><a href="#">До 500 руб.</a></li>
                     <li><a href="#">До 1000 руб.(для двоих)</a></li>
                     <li><a href="#">До 1500 руб.(для двоих-троих)</a></li>
@@ -660,15 +638,15 @@
                     <li><a href="#">Суши</a></li>
                   </ul>
                 <ul class="footer-rolls">
-                  <li><a href="#">Роллы</a></li>
-                  <li><a href="#"Традиционные/Классические></a></li>
+                  <caption class="nav-caption"><a href="#">Роллы</a></caption>
+                  <li><a href="#">Традиционные/Классические></a></li>
                   <li><a href="#">Простые</a></li>
                   <li><a href="#">Теплые</a></li>
                   <li><a href="#">Запеченые</a></li>
                   <li><a href="#">Вегетарианские</a></li>
                   </ul>
                 <ul class="footer-wok">
-                  <li><a href="#">Вок</a></li>
+                  <caption class="nav-caption"><a href="#">Вок</a></caption>
                   <li><a href="#">Яичная</a></li>
                   <li><a href="#">Удон</a></li>
                   <li><a href="#">Гречневая</a></li>
@@ -676,7 +654,7 @@
                   <li><a href="#">Рис</a></li>
                   </ul>
                   <ul class="footer-pizza">
-                    <li><a href="#">Пицца</a></li>
+                    <caption class="nav-caption"><a href="#">Пицца</a></caption>
                     <li><a href="#">Мясная</a></li>
                     <li><a href="#">Рыбная</a></li>
                     <li><a href="#">Сырная</a></li>
