@@ -59,7 +59,7 @@ img {
 .phone {
   font-weight: 700;
 }
-.header-mavigation {
+.header-navigation {
   display: flex;
 }
 .site-navigation-link,
@@ -67,6 +67,7 @@ img {
    text-transform: uppercase;
    font-weight: 600;
    color: #010101;
+   padding: 15px 30px;
 }
 .site-navigation {
   list-style: none;
@@ -77,6 +78,7 @@ img {
   list-style: none;
   padding: 0;
   display: flex;
+  margin-left: auto;
 }
 .offers {
   color: white;
@@ -88,6 +90,7 @@ img {
 }
 .offer-title {
   font-size: 110px;
+  line-height: 100px;
   color: #84c604;
   font-family: "LemonTuesday";
 }
@@ -112,6 +115,8 @@ img {
   font-family: "LemonTuesday";
   text-align: center;
   position: relative;
+  width: max-content;
+  margin: 30px auto;
 }
 .title::before {
   content: "";
@@ -119,7 +124,7 @@ img {
   height: 40px;
   position: absolute;
   top: 0;
-  left: 30%;
+  left: -130px;
   background-image: url("../img/uzor-left.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -130,7 +135,7 @@ img {
   height: 40px;
   position: absolute;
   top: 0;
-  right: 30%;
+  right: -130px;
   background-image: url("../img/uzor-right.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -159,21 +164,31 @@ img {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
+  margin-bottom: 0;
 }
 .product-info {
   font-weight: 300;
   text-align: center;
 }
+.product-info span {
+  margin-right: 5px;
+}
 .product-info span:not(:last-child)::after {
   content: "";
   width: 1px;
-  height: 5px;
+  height: 10px;
   display: inline-block;
+  background-color: #000000;
+}
+.product-wrapper {
+  display: flex;
+  margin-bottom: 25px;
 }
 .price {
   font-size: 22px;
   line-height: 28px;
   font-weight: 700;
+  margin: 0 40px;
 }
 .price sup {
   font-size: 14px;
@@ -187,10 +202,25 @@ img {
   line-height: 28px;
   font-weight: 600;
   align-self: center;
-  background-color: red;
-  color: aliceblue;
-  padding: 5px 20px;
-  padding-right: 40px;
+  background-color: #fd4f10;
+  color: white;
+  padding: 7px 30px;
+  padding-right: 50px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  position: relative;
+}
+.button::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  background-image: url("../img/basket.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 .pagination-list {
   list-style: none;
