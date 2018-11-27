@@ -11,24 +11,22 @@
   <body>
     <header class="main-header">
       <div class="container header-container">
-        <div class="info">
-          <a class="logo" href="#"><img src="img/logo.svg" width="190" height="69" alt="logo"></a>
-          <ul class="info-list">
-            <li class="adress">
+          <ul class="info">
+            <li class="info-logo"><a class="logo" href="#"><img src="img/logo.png" width="190" height="69" alt="logo"></a></li>
+            <li class="info-adress">
               <p>г.Курск, ул.Ленина,д.3</p>
             </li>
-            <li class="mail">
+            <li class="info-mail">
               <p>78003332222@yandex.ru</p>
             </li>
-            <li class="contacts">
+            <li class="info-contacts">
               <p>
                 <span class="phone">+7(800)333 2 222</span>
                 <span class="time">Работаем с 11.00 до 23.00</span>
               </p>
             </li>
-          </ul>
-          <button class="contacts-button">Обратный звонок</button>
-        </div>
+            <li class="info-button"><button type="button" class="contacts-button">Обратный звонок</button></li>
+          </ul> 
         <nav class="header-navigation">
           <ul class="site-navigation">
             <li class="site-navigation-item"><a class="site-navigation-link" href="#">Меню</a></li>
@@ -49,8 +47,8 @@
       <section class="offers">
         <h2 class="visually-hidden">Предложения</h2>
         <div class="controls">
-          <button>Вперед</button>
-          <button>Назад</button>
+          <button class="controls-button controls-button-left" type="button"><span class="visually-hidden">Назад</span></button>
+          <button class="controls-button controls-button-right" type="button"><span class="visually-hidden">Вперед</span></button>
         </div>
         <div class="container">
           <h3 class="offer-title">Счастливые часы</h3>
@@ -93,7 +91,7 @@
                           </button>
                         </div>
                     </div>
-                    <button class="button">В корзину</button>
+                    <button type="button" class="button">В корзину</button>
                   </li>
               <li class="product-item">
                 <img src="img/set-2.png" width="263" height="228" alt="set-2">
@@ -118,7 +116,7 @@
                       </button>
                     </div>
                 </div>
-                <button class="button">В корзину</button>
+                <button type="button" class="button">В корзину</button>
               </li>
               <li class="product-item">
                 <img src="img/set-3.png" width="263" height="228" alt="set-3">
@@ -143,7 +141,7 @@
                     </button>
                   </div>
                 </div>
-                <button class="button">В корзину</button>
+                <button type="button" class="button">В корзину</button>
               </li>
               <li class="product-item">
                 <img src="img/set-4.png" width="263" height="228" alt="set-4">
@@ -168,7 +166,7 @@
                       </button>
                     </div>
                 </div>
-                <button class="button">В корзину</button>
+                <button type="button" class="button">В корзину</button>
               </li></ul>
             <ul class="pagination-list">
               <li><a class="pagination-button back" href="#"><span class="visually-hidden">Назад</span></a></li>
@@ -185,7 +183,7 @@
             <h2 class="title">Роллы</h2>
             <ul class="product-list">
                 <li class="product-item">
-                    <img src="img/roll-1.png" width="186" height="186" alt="roll-1">
+                    <div class="product-img"><img src="img/roll-1.png" width="186" height="186" alt="roll-1"></div>
                     <h3 class="product-title">Кунсей батакон</h3>
                     <p class="product-info">
                       <span>8 шт.</span>
@@ -207,10 +205,10 @@
                           </button>
                         </div>
                     </div>
-                    <button class="button">В корзину</button>
+                    <button type="button" class="button">В корзину</button>
                   </li>
               <li class="product-item">
-                <img src="img/roll-2.png" width="182" height="182" alt="roll-2">
+                <div class="product-img"><img src="img/roll-2.png" width="182" height="182" alt="roll-2"></div>
                 <h3 class="product-title">Унаги диру</h3>
                 <p class="product-info">
                   <span>8 шт.</span>
@@ -232,10 +230,10 @@
                       </button>
                     </div>
                 </div>
-                <button class="button">В корзину</button>
+                <button type="button" class="button">В корзину</button>
               </li>
               <li class="product-item">
-                <img src="img/roll-3.png" width="180" height="180" alt="roll-3">
+                <div class="product-img"><img src="img/roll-3.png" width="180" height="180" alt="roll-3"></div>
                 <h3 class="product-title">Филадельфия</h3>
                 <p class="product-info">
                   <span>8 шт.</span>
@@ -257,10 +255,10 @@
                       </button>
                     </div>
                 </div>
-                <button class="button">В корзину</button>
+                <button type="button" class="button">В корзину</button>
               </li>
               <li class="product-item">
-                <img src="img/roll-4.png" width="189" height="189" alt="roll-4">
+                <div class="product-img"><img src="img/roll-4.png" width="189" height="189" alt="roll-4"></div>
                 <h3 class="product-title">Мексиканский</h3>
                 <p class="product-info">
                   <span>8 шт.</span>
@@ -282,7 +280,7 @@
                       </button>
                     </div>
                 </div>
-                <button class="button">В корзину</button>
+                <button type="button" class="button">В корзину</button>
               </li>
             </ul>
             <ul class="pagination-list">
@@ -322,7 +320,7 @@
                       </button>
                     </div>
                 </div>
-                <button class="button">В корзину</button>
+                <button type="button" class="button">В корзину</button>
               </li>
               <li class="product-item">
                   <img src="img/pizza-2.png" width="263" height="228" alt="pizza-2">
@@ -347,7 +345,7 @@
                         </button>
                       </div>
                   </div>
-                  <button class="button">В корзину</button>
+                  <button type="button" class="button">В корзину</button>
                 </li>
                 <li class="product-item">
                     <img src="img/pizza-3.png" width="263" height="228" alt="pizza-3">
@@ -372,7 +370,7 @@
                           </button>
                         </div>
                     </div>
-                    <button class="button">В корзину</button>
+                    <button type="button" class="button">В корзину</button>
                   </li>
                   <li class="product-item">
                       <img src="img/pizza-4.png" width="263" height="228" alt="pizza-4">
@@ -397,7 +395,7 @@
                             </button>
                           </div>
                       </div>
-                      <button class="button">В корзину</button>
+                      <button type="button" class="button">В корзину</button>
                     </li>
             </ul>
             <ul class="pagination-list">
@@ -415,7 +413,7 @@
             <h2 class="title">Wok</h2>
             <ul class="product-list">
               <li class="product-item">
-                  <img src="img/wok-1.png" width="183" height="183" alt="wok-1">
+                  <div class="product-img"><img src="img/wok-1.png" width="183" height="183" alt="wok-1"></div>
                   <h3 class="product-title">С говядиной</h3>
                   <p class="product-info">
                     <span>400 г.</span>
@@ -441,10 +439,10 @@
                         </button>
                       </div>
                   </div>
-                  <button class="button">В корзину</button>
+                  <button type="button" class="button">В корзину</button>
               </li>
               <li class="product-item">
-                  <img src="img/wok-2.png" width="184" height="184" alt="wok-2">
+                  <div class="product-img"><img src="img/wok-2.png" width="184" height="184" alt="wok-2"></div>
                   <h3 class="product-title">С курицей</h3>
                   <p class="product-info">
                     <span>400 г.</span>
@@ -470,10 +468,10 @@
                         </button>
                       </div>
                   </div>
-                  <button class="button">В корзину</button>
+                  <button type="button" class="button">В корзину</button>
               </li>
               <li class="product-item">
-                  <img src="img/wok-3.png" width="182" height="182" alt="wok-3">
+                  <div class="product-img"><img src="img/wok-3.png" width="182" height="182" alt="wok-3"></div>
                   <h3 class="product-title">С морепродуктами</h3>
                   <p class="product-info">
                     <span>400 г.</span>
@@ -499,10 +497,10 @@
                         </button>
                       </div>
                   </div>
-                  <button class="button">В корзину</button>
+                  <button type="button" class="button">В корзину</button>
               </li>
               <li class="product-item">
-                  <img src="img/wok-4.png" width="193" height="193" alt="wok-4">
+                  <div class="product-img"><img src="img/wok-4.png" width="193" height="193" alt="wok-4"></div>
                   <h3 class="product-title">С овощами</h3>
                   <p class="product-info">
                     <span>400 г.</span>
@@ -528,7 +526,7 @@
                         </button>
                       </div>
                   </div>
-                  <button class="button">В корзину</button>
+                  <button type="button" class="button">В корзину</button>
               </li>
             </ul>
             <ul class="pagination-list">
@@ -547,7 +545,7 @@
             <h2><a href="#">Акции</a></h2>
             <ul class="product-list">
                 <li class="product-item">
-                    <img src="img/roll-1.png" width="186" height="186" alt="roll-1">
+                    <div class="product-img"><img src="img/roll-1.png" width="186" height="186" alt="roll-1"></div>
                     <h3 class="product-title">Кунсей батакон</h3>
                     <p class="product-info">
                       <span>8 шт.</span>
@@ -569,10 +567,10 @@
                           </button>
                         </div>
                     </div>
-                    <button class="button">В корзину</button>
+                    <button type="button" class="button">В корзину</button>
                   </li>
               <li class="product-item">
-                <img src="img/roll-2.png" width="182" height="182" alt="roll-2">
+                <div class="product-img"><img src="img/roll-2.png" width="182" height="182" alt="roll-2"></div>
                 <h3 class="product-title">Унаги диру</h3>
                 <p class="product-info">
                   <span>8 шт.</span>
@@ -594,10 +592,10 @@
                       </button>
                     </div>
                 </div>
-                <button class="button">В корзину</button>
+                <button type="button" class="button">В корзину</button>
               </li>
               <li class="product-item">
-                <img src="img/roll-3.png" width="180" height="180" alt="roll-3">
+                <div class="product-img"><img src="img/roll-3.png" width="180" height="180" alt="roll-3"></div>
                 <h3 class="product-title">Филадельфия</h3>
                 <p class="product-info">
                   <span>8 шт.</span>
@@ -619,10 +617,10 @@
                       </button>
                     </div>
                 </div>
-                <button class="button">В корзину</button>
+                <button type="button" class="button">В корзину</button>
               </li>
               <li class="product-item">
-                <img src="img/roll-4.png" width="189" height="189" alt="roll-4">
+                <div class="product-img"><img src="img/roll-4.png" width="189" height="189" alt="roll-4"></div>
                 <h3 class="product-title">Мексиканский</h3>
                 <p class="product-info">
                   <span>8 шт.</span>
@@ -644,7 +642,7 @@
                       </button>
                     </div>
                 </div>
-                <button class="button">В корзину</button>
+                <button type="button" class="button">В корзину</button>
               </li>
             </ul>
             <ul class="pagination-list">
@@ -690,9 +688,9 @@
               <p class="review-text">Спасибо за быструю доставку! Отличный поздний ужин после рабочего дня)</p>
               <img src="img/foto.jpg" width="106" height="142" alt="foto">
               <div class="vk-tools">
-                <button class="vk-like"><span class="visually-hidden">Лайк</span></button>
+                <button type="button" class="vk-like"><span class="visually-hidden">Лайк</span></button>
                 <a class="vk-comment" href="#"><span class="visually-hidden">Коммент</span>2</a>
-                <button class="vk-repost"><span class="visually-hidden">Репост</span></button>
+                <button type="button" class="vk-repost"><span class="visually-hidden">Репост</span></button>
               </div>
               <a class="vk-button"></a>
             </li>
@@ -707,9 +705,9 @@
                 <p class="review-text">Спасибо за быструю доставку! Отличный поздний ужин после рабочего дня)</p>
                 <img src="img/foto.jpg" width="106" height="142" alt="foto">
                 <div class="vk-tools">
-                  <button class="vk-like"><span class="visually-hidden">Лайк</span></button>
+                  <button type="button" class="vk-like"><span class="visually-hidden">Лайк</span></button>
                   <a class="vk-comment" href="#"><span class="visually-hidden">Коммент</span>2</a>
-                  <button class="vk-repost"><span class="visually-hidden">Репост</span></button>
+                  <button type="button" class="vk-repost"><span class="visually-hidden">Репост</span></button>
                 </div>
                 <a class="vk-button"></a>
               </li>
@@ -724,9 +722,9 @@
                   <p class="review-text">Спасибо за быструю доставку! Отличный поздний ужин после рабочего дня)</p>
                   <img src="img/foto.jpg" width="106" height="142" alt="foto">
                   <div class="vk-tools">
-                    <button class="vk-like"><span class="visually-hidden">Лайк</span></button>
+                    <button type="button" class="vk-like"><span class="visually-hidden">Лайк</span></button>
                     <a class="vk-comment" href="#"><span class="visually-hidden">Коммент</span>2</a>
-                    <button class="vk-repost"><span class="visually-hidden">Репост</span></button>
+                    <button type="button" class="vk-repost"><span class="visually-hidden">Репост</span></button>
                   </div>
                   <a class="vk-button"></a>
                 </li>
@@ -740,13 +738,13 @@
           <span>Есть вопросы?</span>
           <b>Оставьте свои контакты</b>
         </p>
-        <form method="POST">
+        <form class="feedback-form" method="POST">
         <input type="text" name="name" placeholder="Сергей">
         <input type="tel" name="phone" placeholder="Телефон">
-        <button type="submit">Отправить</button>
+        <button  class="feedback-button" type="submit">Отправить</button>
           </form>
+          <p class="feedback-paragraph">Нажимая на кнопку "Отправить", вы даете согласие на обработку своих персональных данных.</p>
         </div>
-        <p class="feedback-paragraph">Нажимая на кнопку "Отправить", вы даете согласие на обработку своих персональных данных.</p>
       </section>
       <section class="about">
         <div class="container">
