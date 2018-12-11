@@ -52,14 +52,14 @@
           <button class="controls-button controls-button-right" type="button"><span class="visually-hidden">Вперед</span></button>
         </div>
         <div class="container">
-          <h3 class="offer-title">Счастливые часы</h3>
+          <div class="offer-container"><h3 class="offer-title">Счастливые часы</h3>
+          <p class="discount">Скидка 15%</p></div>
           <p class="offer-text">С 11:00 до 16:00 в будние дни</p>
-          <p class="discount">Скидка 15%</p>
           <a class="offer-button">Подробнее</a>
           <ul class="slider">
-            <li class="slider-item"><span class="visually-hidden">Слайд 1</span></li>
-            <li class="slider-item"><span class="visually-hidden">Слайд 2</span></li>
-            <li class="slider-item"><span class="visually-hidden">Слайд 3</span></li>
+            <li class="slider-item"><button class="slider-button" type="button"><span class="visually-hidden">Слайд 1</span></button></li>
+            <li class="slider-item"><button class="slider-button" type="button"><span class="visually-hidden">Слайд 2</span></button></li>
+            <li class="slider-item"><button class="slider-button" type="button"><span class="visually-hidden">Слайд 3</span></button></li>
           </ul>
         </div>
       </section>
@@ -69,7 +69,7 @@
               <div class="container">
             <h2 class="title">Сеты</h2>
             <ul class="product-list">
-                <li class="product-item">
+                <li class="product-item hit">
                     <img src="img/set-1.png" width="263" height="228" alt="set-1">
                     <h3 class="product-title">Сет №10</h3>
                     <p class="product-info">
@@ -144,7 +144,7 @@
                 </div>
                 <button type="button" class="button">В корзину</button>
               </li>
-              <li class="product-item">
+              <li class="product-item veg">
                 <img src="img/set-4.png" width="263" height="228" alt="set-4">
                 <h3 class="product-title">Сет №6</h3>
                 <p class="product-info">
@@ -209,7 +209,7 @@
                     <button type="button" class="button">В корзину</button>
                   </li>
               <li class="product-item">
-                <div class="product-img"><img src="img/roll-2.png" width="182" height="182" alt="roll-2"></div>
+                <div class="product-img hot"><img src="img/roll-2.png" width="182" height="182" alt="roll-2"></div>
                 <h3 class="product-title">Унаги диру</h3>
                 <p class="product-info">
                   <span>8 шт.</span>
@@ -324,7 +324,7 @@
                 <button type="button" class="button">В корзину</button>
               </li>
               <li class="product-item">
-                  <img src="img/pizza-2.png" width="263" height="228" alt="pizza-2">
+                  <div class="product-img hot"><img src="img/pizza-2.png" width="263" height="228" alt="pizza-2"></div>
                   <h3 class="product-title">Вегетарианская</h3>
                   <p class="product-info">
                     <span>33 см</span>
@@ -422,10 +422,10 @@
                   </p>
                   <div class="product-sause">
                     <div class="sause-add">Добавить:
-                      <input>
+                      <input type="number" class="sause-input" value="+2">
                     </div>
                     <div class="sause-price">140 руб.
-                      <button type="button"></button>
+                      <button type="button" class="sause-plus"></button>
                     </div>
                     <select class="sause"><option>Китайский соус</option></select>
                   </div>
@@ -455,10 +455,10 @@
                   </p>
                   <div class="product-sause">
                     <div class="sause-add">Добавить:
-                      <input>
+                      <input type="number" class="sause-input" value="+2">
                     </div>
                     <div class="sause-price">0 руб.
-                      <button type="button"></button>
+                      <button type="button" class="sause-plus"></button>
                     </div>
                     <select class="sause"><option>Китайский соус</option></select>
                   </div>
@@ -488,10 +488,10 @@
                   </p>
                   <div class="product-sause">
                     <div class="sause-add">Добавить:
-                      <input>
+                      <input type="number" class="sause-input" value="+2">
                     </div>
                     <div class="sause-price">140 руб.
-                      <button type="button"></button>
+                      <button type="button" class="sause-plus"></button>
                     </div>
                     <select class="sause"><option>Китайский соус</option></select>
                   </div>
@@ -521,10 +521,10 @@
                   </p>
                   <div class="product-sause">
                     <div class="sause-add">Добавить:
-                      <input>
+                      <input type="number" class="sause-input" value="+2">
                     </div>
                     <div class="sause-price">140 руб.
-                      <button type="button"></button>
+                      <button type="button" class="sause-plus"></button>
                     </div>
                     <select class="sause"><option>Китайский соус</option></select>
                   </div>
@@ -562,7 +562,7 @@
             <h2 class="new-title"><a href="#">Акции</a></h2>
             <ul class="product-list">
                 <li class="product-item">
-                    <div class="product-img"><img src="img/roll-1.png" width="186" height="186" alt="roll-1"></div>
+                    <div class="product-img"><img src="img/new-roll-1.png" width="263" height="228" alt="roll-1"></div>
                     <h3 class="product-title">Кунсей батакон</h3>
                     <p class="product-info">
                       <span>8 шт.</span>
@@ -587,7 +587,7 @@
                     <button type="button" class="button">В корзину</button>
                   </li>
               <li class="product-item">
-                <div class="product-img"><img src="img/roll-2.png" width="182" height="182" alt="roll-2"></div>
+                <div class="product-img hot"><img src="img/new-roll-2.png" width="263" height="228" alt="roll-2"></div>
                 <h3 class="product-title">Унаги диру</h3>
                 <p class="product-info">
                   <span>8 шт.</span>
@@ -612,7 +612,7 @@
                 <button type="button" class="button">В корзину</button>
               </li>
               <li class="product-item">
-                <div class="product-img"><img src="img/roll-3.png" width="180" height="180" alt="roll-3"></div>
+                <div class="product-img"><img src="img/new-roll-3.png" width="263" height="228" alt="roll-3"></div>
                 <h3 class="product-title">Филадельфия</h3>
                 <p class="product-info">
                   <span>8 шт.</span>
@@ -637,7 +637,7 @@
                 <button type="button" class="button">В корзину</button>
               </li>
               <li class="product-item">
-                <div class="product-img"><img src="img/roll-4.png" width="189" height="189" alt="roll-4"></div>
+                <div class="product-img"><img src="img/new-roll-4.png" width="263" height="228" alt="roll-4"></div>
                 <h3 class="product-title">Мексиканский</h3>
                 <p class="product-info">
                   <span>8 шт.</span>
@@ -698,7 +698,7 @@
               <div class="user-vk">
                 <img src="img/avatar.png" width="67" height="67" alt="">
                 <p class="user-vk-info">
-                  <span class="user-vk-name">Надежда Наширбанова</span>
+                  <span class="user-vk-name"><a href="#">Надежда Наширбанова</a></span>
                   <span class="user-vk-date">5 авг 2017 в 9:58</span>
                 </p>
               </div>
@@ -715,7 +715,7 @@
                 <div class="user-vk">
                   <img src="img/avatar.png" width="67" height="67" alt="">
                   <p class="user-vk-info">
-                    <span class="user-vk-name">Надежда Наширбанова</span>
+                    <span class="user-vk-name"><a href="#">Надежда Наширбанова</a></span>
                     <span class="user-vk-date">5 авг 2017 в 9:58</span>
                   </p>
                 </div>
@@ -732,7 +732,7 @@
                   <div class="user-vk">
                     <img src="img/avatar.png" width="67" height="67" alt="">
                     <p class="user-vk-info">
-                      <span class="user-vk-name">Надежда Наширбанова</span>
+                      <span class="user-vk-name"><a href="#">Надежда Наширбанова</a></span>
                       <span class="user-vk-date">5 авг 2017 в 9:58</span>
                     </p>
                   </div>
@@ -795,7 +795,7 @@
             <li><a href="#">Напитки</a></li>
             <li><a href="#">Дополнительно</a></li>
           </ul>
-                <ul class="footer-sets">
+              <div class="navigation-container"> <ul class="footer-sets">
                     <li class="nav-caption"><a href="#">Сеты</a></li>
                     <li><a href="#">До 500 руб.</a></li>
                     <li><a href="#">До 1000 руб.(для двоих)</a></li>
@@ -829,10 +829,10 @@
                     <li><a href="#">Рыбная</a></li>
                     <li><a href="#">Сырная</a></li>
                     <li><a href="#">Вегетарианская</a></li>
-                    </ul>
+                    </ul></div>
         </nav>
         <div class="footer-wrapper"><p class="footer-copyright">МИЮШИ © 2017</p>
-        <p class="footer-agreement"><a>Соглашение на обработку персональных данных</a></p>
+        <p class="footer-agreement"><a href="#">Соглашение на обработку персональных данных</a></p>
         <ul class="footer-social">
             <li class="social-item"><a class="social-button instagram" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
             <li class="social-item"><a class="social-button vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
